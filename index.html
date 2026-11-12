@@ -6,129 +6,187 @@
 <title>Chopper Epoxy Paint Indonesia - Spesialis Epoxy Lantai Profesional</title>
 <style>
     * { box-sizing: border-box; margin: 0; padding: 0; font-family: Arial, sans-serif; }
-  body { background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('IMG20260224214813.jpg'); background-size: cover; background-attachment: fixed; background-position: center; color: #222; }
+  body { background: linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)), url('IMG20260224214813.jpg'); background-size: cover; background-attachment: fixed; background-position: center; color: #222; padding-bottom: 75px; }
   a { text-decoration: none; }
-  .header { background: rgba(10,42,94,0.92); color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
-  .logo { font-weight: bold; font-size: 18px; line-height: 1.2; }
-  .logo span { font-size: 12px; font-weight: normal; color: #FFD700; }
-  .btn-wa { background: #25D366; color: white; padding: 10px 14px; border-radius: 20px; font-weight: bold; font-size: 13px; }
-  .hero { background: linear-gradient(rgba(10,42,94,0.75), rgba(10,42,94,0.75)), url('IMG20260224214813.jpg'); background-size: cover; background-position: center; color: white; padding: 40px 20px; text-align: center; }
-  .hero h1 { font-size: 30px; line-height: 1.2; }
+  .header { background: rgba(10,42,94,0.95); color: white; padding: 14px 20px; display: flex; justify-content: space-between; align-items: center; position: sticky; top: 0; z-index: 10; }
+  .logo { font-weight: bold; font-size: 17px; line-height: 1.2; }
+  .logo span { font-size: 11px; font-weight: normal; color: #FFD700; display: block; }
+  .btn-wa { background: #25D366; color: white; padding: 9px 14px; border-radius: 20px; font-weight: bold; font-size: 13px; }
+  .hero { background: linear-gradient(rgba(10,42,94,0.78), rgba(10,42,94,0.78)), url('IMG20260224214813.jpg'); background-size: cover; background-position: center; color: white; padding: 40px 20px; text-align: center; margin: 0; border-radius: 0; }
+  .hero h1 { font-size: 28px; line-height: 1.25; }
   .hero h1 span { color: #FFD700; }
-  .hero p { margin: 15px 0 25px; font-size: 15px; line-height: 1.5; opacity: .9; }
-  .btn-kuning { background: #FFD700; color: #0A2A5E; padding: 14px 22px; border-radius: 8px; font-weight: bold; display: inline-block; }
-  .btn-putih { background: white; color: #0A2A5E; padding: 14px 22px; border-radius: 8px; font-weight: bold; display: inline-block; margin-left: 8px; }
-  .badge { display: flex; gap: 10px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
-  .badge span { background: rgba(255,255,255,.12); padding: 10px 12px; border-radius: 8px; font-size: 12px; font-weight: bold; }
-  section { background: rgba(255,255,255,0.96); margin: 15px; padding: 22px; border-radius: 12px; }
+  .hero p { margin: 15px 0 24px; font-size: 14px; line-height: 1.5; opacity: .95; }
+  .btn-kuning { background: #FFD700; color: #0A2A5E; padding: 13px 20px; border-radius: 8px; font-weight: bold; display: inline-block; font-size: 14px; }
+  .btn-putih { background: white; color: #0A2A5E; padding: 13px 20px; border-radius: 8px; font-weight: bold; display: inline-block; margin-left: 8px; font-size: 14px; }
+  .badge { display: flex; gap: 8px; justify-content: center; margin-top: 22px; flex-wrap: wrap; }
+  .badge span { background: rgba(255,255,255,.14); padding: 8px 12px; border-radius: 8px; font-size: 12px; font-weight: bold; }
+  section { background: rgba(255,255,255,0.97); margin: 15px; padding: 20px; border-radius: 12px; }
   section h2 { font-size: 20px; color: #0A2A5E; margin-bottom: 6px; }
+  section h3 { font-size: 16px; color: #0A2A5E; margin: 18px 0 6px; }
   section p.sub { color: #666; font-size: 13px; margin-bottom: 16px; }
   .grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
-  .card { background: #f8f9fb; padding: 16px; border-radius: 10px; }
-  .card b { display: block; margin-bottom: 6px; color: #0A2A5E; }
-  .card p { font-size: 13px; color: #555; line-height: 1.4; margin-bottom: 12px; }
-  .produk { border: 1px solid #eee; border-radius: 10px; overflow: hidden; }
+  .card { background: #f8f9fb; padding: 15px; border-radius: 10px; border: 1px solid #eef0f4; }
+  .card b { display: block; margin-bottom: 6px; color: #0A2A5E; font-size: 14px; }
+  .card p, .card ul { font-size: 13px; color: #555; line-height: 1.5; }
+  .card p { margin-bottom: 10px; }
+  .produk { border: 1px solid #e5e7eb; border-radius: 10px; overflow: hidden; background: #fff; }
   .produk img { width: 100%; height: 150px; object-fit: cover; background: #ddd; display: block; }
   .produk .isi { padding: 14px; }
-  .harga { color: #0A2A5E; font-weight: bold; font-size: 18px; margin: 8px 0; }
+  .harga { color: #0A2A5E; font-weight: bold; font-size: 15px; margin: 8px 0; display: block; }
   .btn-beli { display: block; text-align: center; background: #0A2A5E; color: white; padding: 11px; border-radius: 8px; font-weight: bold; font-size: 13px; }
   .btn-pesan-hijau { display: inline-block; text-align: center; background: #25D366; color: white; padding: 8px 12px; border-radius: 6px; font-weight: bold; font-size: 12px; }
-  table { width: 100%; border-collapse: collapse; font-size: 13px; }
-  th, td { border: 1px solid #ddd; padding: 10px; text-align: left; }
-  th { background: #0A2A5E; color: white; }
-  label { display: block; font-weight: bold; margin: 16px 0 7px; font-size: 14px; }
-  input, select, textarea { width: 100%; padding: 13px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; }
-  textarea { height: 100px; }
-  .btn-kirim { width: 100%; margin-top: 18px; padding: 15px; background: #0A2A5E; color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; }
-  footer { background: rgba(10,42,94,0.95); color: white; padding: 24px 20px; text-align: center; font-size: 13px; line-height: 1.7; }
+  label { display: block; font-weight: bold; margin: 14px 0 6px; font-size: 13px; color: #222; }
+  input, select, textarea { width: 100%; padding: 12px; border: 1px solid #ccc; border-radius: 8px; font-size: 14px; display: block; background: #fff; }
+  textarea { height: 95px; }
+  .btn-kirim { width: 100%; margin-top: 16px; padding: 14px; background: #0A2A5E; color: white; border: none; border-radius: 8px; font-size: 15px; font-weight: bold; cursor: pointer; }
+  footer { background: rgba(10,42,94,0.97); color: white; padding: 24px 18px; text-align: center; font-size: 13px; line-height: 1.8; }
   footer b { color: #FFD700; }
-  .wa-float { position: fixed; bottom: 18px; right: 18px; background: #25D366; color: white; padding: 14px 18px; border-radius: 50px; font-weight: bold; box-shadow: 0 4px 12px rgba(0,0,0,.3); z-index: 99; }
+  footer a { color: #FFD700; word-break: break-all; }
+  .wa-float { position: fixed; bottom: 16px; right: 16px; background: #25D366; color: white; padding: 13px 18px; border-radius: 50px; font-weight: bold; font-size: 14px; box-shadow: 0 4px 12px rgba(0,0,0,.35); z-index: 99; }
   @media(max-width:600px){ .grid{ grid-template-columns: 1fr; } .btn-putih{ margin-left:0; margin-top:10px; } }
 </style>
 </head>
 <body>
 
 <header class="header">
-  <p class="logo">CHOPPER EPOXY PAINT<br><span>SPESIALIS EPOXY LANTAI PROFESIONAL</span></p>
-  <a class="btn-wa" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy%20Paint%20Indonesia,%20saya%20ingin%20tanya%20harga">💬 Chat WA</a>
+  <div class="logo">CHOPPER EPOXY PAINT<span>SPESIALIS EPOXY LANTAI PROFESIONAL</span></div>
+  <a class="btn-wa" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy%20Paint%20Indonesia,%20saya%20ingin%20konsultasi" target="_blank">💬 Chat WA</a>
 </header>
 
-<section class="hero" style="margin:0;border-radius:0">
+<section class="hero">
   <h1>CAT LANTAI EPOXY<br><span>KUAT, MENGKILAP &amp; TAHAN LAMA</span></h1>
   <p>Spesialis Epoxy Lantai Profesional untuk Gudang, Pabrik, Parkir, Rumah Sakit, Sekolah &amp; Kantor. Quality floor for a better tomorrow.</p>
   <a class="btn-kuning" href="#form">📅 Minta Survei Gratis</a>
-  <a class="btn-putih" href="#form">Lihat Layanan</a>
-  <p class="badge">
+  <a class="btn-putih" href="#produk">Lihat Produk</a>
+  <div class="badge">
     <span>✅ Garansi Pekerjaan</span>
     <span>✅ Tim Profesional</span>
     <span>✅ Seluruh Indonesia</span>
-  </p>
+  </div>
 </section>
-
-<section>
+<section id="profil">
   <h2>🏢 Company Profile</h2>
-  <p class="sub">Chopper Epoxy Paint Indonesia - Spesialis Jasa &amp; Produsen Cat Epoxy Lantai.</p>
-  <p style="font-size:14px;line-height:1.6;color:#444"><b>Chopper Epoxy Paint Indonesia</b> melayani jasa pengecatan lantai epoxy profesional menggunakan material asli Chopper dengan ketebalan terukur mulai dari 500 Micron hingga 3000 Micron untuk area industri, komersial, maupun fasilitas kesehatan.</p>
-</section>
+  <p class="sub">Chopper Epoxy Paint Indonesia — Spesialis Jasa &amp; Produsen Cat Epoxy Lantai.</p>
+  <p style="font-size:14px;line-height:1.6;color:#444;margin-bottom:12px;">
+    <b>Chopper Epoxy Paint Indonesia</b> adalah perusahaan yang bergerak di bidang produksi material cat epoxy lantai sekaligus kontraktor jasa aplikator epoxy profesional di seluruh Indonesia. Berbasis di Tangerang Selatan, kami menyediakan solusi pelapisan lantai (<i>floor coating</i>) berstandar industri dengan ketebalan terukur mulai dari <b>500 Micron hingga 3000 Micron</b>.
+  </p>
+  <p style="font-size:14px;line-height:1.6;color:#444;margin-bottom:16px;">
+    Didukung tenaga aplikator berpengalaman, mesin <i>grinding</i> &amp; <i>vacuum</i> debu industri, serta kontrol mutu bahan baku yang ketat, kami memastikan setiap proyek gudang, pabrik, rumah sakit, area parkir, hingga fasilitas komersial memiliki lantai yang kuat, higienis, dan bergaransi.
+  </p>
 
-<section>
-  <h2>🔧 Layanan Kami</h2>
-  <p class="sub">Klik tombol pesan pada layanan yang dibutuhkan untuk langsung membuka WhatsApp.</p>
+  <div class="grid">
+    <article class="card" style="border-left:4px solid #0A2A5E;">
+      <b>🎯 Visi Kami</b>
+      <p style="margin-bottom:0;">Menjadi produsen cat epoxy dan kontraktor aplikator lantai terdepan di Indonesia yang terpercaya dalam kualitas material, ketepatan waktu, serta inovasi teknologi pelapisan lantai.</p>
+    </article>
+    <article class="card" style="border-left:4px solid #FFD700;">
+      <b>🚀 Misi Kami</b>
+      <ul style="padding-left:18px;margin:0;">
+        <li>Memproduksi material cat epoxy berkualitas tinggi dengan daya rekat maksimal.</li>
+        <li>Memberikan layanan pengerjaan rapi, presisi, dan sesuai standar keselamatan kerja.</li>
+        <li>Menghadirkan harga kompetitif langsung dari pabrik disertai garansi jelas.</li>
+      </ul>
+    </article>
+  </div>
+
+  <h3>⚙️ Tahap Pengerjaan Epoxy (Dari Awal Sampai Akhir)</h3>
+  <p class="sub">Proses kerja terstruktur sesuai SOP standar industri untuk hasil maksimal.</p>
   <div class="grid">
     <article class="card">
-      <b>🏭 Epoxy Lantai Gudang &amp; Pabrik</b>
-      <p>Tahan beban berat, forklift, anti debu &amp; mudah dibersihkan.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20jasa%20Epoxy%20Lantai%20Gudang%20dan%20Pabrik">📲 Pesan Layanan Ini</a>
+      <b>1. Survei &amp; Cek Kelembapan Beton</b>
+      <p style="margin-bottom:0;">Pengukuran luas area, pengecekan keretakan, dan pengukuran kelembapan beton sebelum pengerjaan dimulai.</p>
     </article>
     <article class="card">
-      <b>🅿️ Epoxy Parkir &amp; Basement</b>
-      <p>Anti slip, marking garis jelas, tahan air &amp; awet.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20jasa%20Epoxy%20Parkir%20dan%20Basement">📲 Pesan Layanan Ini</a>
+      <b>2. Grinding &amp; Vacuum Debu</b>
+      <p style="margin-bottom:0;">Pengupasan permukaan lantai menggunakan mesin <i>diamond grinding</i> untuk membuka pori beton dan menyedot debu hingga bersih.</p>
     </article>
     <article class="card">
-      <b>🏥 Epoxy Rumah Sakit &amp; Klinik</b>
-      <p>Higienis, anti bakteri, warna cerah &amp; aman.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20jasa%20Epoxy%20Rumah%20Sakit%20dan%20Klinik">📲 Pesan Layanan Ini</a>
+      <b>3. Aplikasi Epoxy Primer (Dasar)</b>
+      <p style="margin-bottom:0;">Pelapisan cat dasar agar meresap ke pori beton dan menciptakan daya ikat kuat dengan lapisan berikutnya.</p>
     </article>
     <article class="card">
-      <b>🏫 Epoxy Sekolah &amp; Kantor</b>
-      <p>Rapi, mengkilap, nyaman dilihat &amp; tahan lama.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20jasa%20Epoxy%20Sekolah%20dan%20Kantor">📲 Pesan Layanan Ini</a>
+      <b>4. Plamir &amp; Perbaikan Retak / Nat</b>
+      <p style="margin-bottom:0;">Penambalan lubang, retakan rambut, dan sambungan beton (<i>joint</i>) menggunakan dempul epoxy agar permukaan rata.</p>
     </article>
     <article class="card">
-      <b>🎨 Epoxy 3D &amp; Motif Custom</b>
-      <p>Desain sesuai permintaan, untuk showroom &amp; toko.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20jasa%20Epoxy%203D%20dan%20Motif%20Custom">📲 Pesan Layanan Ini</a>
+      <b>5. Aplikasi Body Coat (Lapisan Tengah)</b>
+      <p style="margin-bottom:0;">Penuangan dan perataan lapisan tengah untuk membentuk ketebalan sesuai spesifikasi (500–3000 Micron) dan menahan beban berat.</p>
     </article>
     <article class="card">
-      <b>🛠️ Jasa Cat Ulang &amp; Repair</b>
-      <p>Lantai lama rusak? Kami perbaiki jadi seperti baru.</p>
-      <a class="btn-pesan-hijau" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20Jasa%20Cat%20Ulang%20dan%20Repair%20Lantai">📲 Pesan Layanan Ini</a>
+      <b>6. Aplikasi Top Coat &amp; Serah Terima</b>
+      <p style="margin-bottom:0;">Pelapisan akhir (<i>finishing</i>) mengkilap dan tahan gores, dilanjutkan inspeksi kualitas (QC) serta serah terima garansi.</p>
     </article>
   </div>
 </section>
 
-<section>
+<section id="layanan">
+  <h2>🔧 Layanan Kami</h2>
+  <p class="sub">Klik tombol pesan pada layanan yang dibutuhkan untuk langsung terhubung ke WhatsApp.</p>
+  <div class="grid">
+    <article class="card">
+      <b>🏭 Epoxy Lantai Gudang &amp; Pabrik</b>
+      <p>Tahan beban berat, forklift, anti debu &amp; mudah dibersihkan.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Epoxy%20Lantai%20Gudang%20%26%20Pabrik" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+    <article class="card">
+      <b>🅿️ Epoxy Parkir &amp; Basement</b>
+      <p>Anti slip, marking garis jelas, tahan air &amp; awet.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Epoxy%20Parkir%20%26%20Basement" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+    <article class="card">
+      <b>🏥 Epoxy Rumah Sakit &amp; Klinik</b>
+      <p>Higienis, anti bakteri, warna cerah &amp; aman.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Epoxy%20Rumah%20Sakit%20%26%20Klinik" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+    <article class="card">
+      <b>🏫 Epoxy Sekolah &amp; Kantor</b>
+      <p>Rapi, mengkilap, nyaman dilihat &amp; tahan lama.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Epoxy%20Sekolah%20%26%20Kantor" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+    <article class="card">
+      <b>🎨 Epoxy 3D &amp; Motif Custom</b>
+      <p>Desain sesuai permintaan, untuk showroom &amp; toko.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Epoxy%203D%20%26%20Motif%20Custom" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+    <article class="card">
+      <b>🛠️ Jasa Cat Ulang &amp; Repair</b>
+      <p>Lantai lama rusak? Kami perbaiki jadi seperti baru.</p>
+      <a class="btn-pesan-hijau" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20layanan%20Jasa%20Cat%20Ulang%20%26%20Repair" target="_blank">📲 Pesan Layanan Ini</a>
+    </article>
+  </div>
+</section>
+<section id="produk">
   <h2>🎨 Produk Unggulan</h2>
-  <p class="sub">Cat epoxy asli Chopper, kualitas pabrik, harga langsung distributor.</p>
+  <p class="sub">Sistem pelapisan cat epoxy asli Chopper — kualitas pabrik, harga langsung distributor.</p>
   <div class="grid">
     <article class="produk">
-      <img src="https://placeholder.com" alt="Epoxy Topcoat">
-      <p class="isi">
-        <b>Epoxy Paint - Topcoat (Base A)</b><br>
-        <small style="color:#555">High Gloss &amp; Durable, 16 Kg Net Weight. Code: CHP-SL-TC-001A</small>
-        <span class="harga" style="display:block">Hubungi Untuk Harga</span>
-        <a class="btn-beli" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20mau%20pesan%20Epoxy%20Paint%20Topcoat%20Base%20A%2016%20Kg">📲 Pesan Via WA</a>
-      </p>
+      <img src="https://placehold.co" alt="Epoxy Primer">
+      <div class="isi">
+        <b>1. Epoxy Primer - Lapisan Dasar Beton</b><br>
+        <small style="color:#555">Daya rekat tinggi, menutup pori beton secara maksimal, mencegah gelembung udara, dan menghemat lapisan berikutnya.</small>
+        <span class="harga">Hubungi Untuk Harga</span>
+        <a class="btn-beli" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20Epoxy%20Primer" target="_blank">📲 Pesan Primer Via WA</a>
+      </div>
     </article>
+
     <article class="produk">
-      <img src="https://placeholder.com" alt="Epoxy Primer">
-      <p class="isi">
-        <b>Epoxy Primer - Dasar Beton</b><br>
-        <small style="color:#555">Daya rekat kuat, menutup pori beton, hemat topcoat.</small>
-        <span class="harga" style="display:block">Hubungi Untuk Harga</span>
-        <a class="btn-beli" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy,%20saya%20mau%20pesan%20Epoxy%20Primer%20Dasar%20Beton">📲 Pesan Via WA</a>
-      </p>
+      <img src="https://placehold.co" alt="Epoxy Body Coat">
+      <div class="isi">
+        <b>2. Epoxy Body Coat - Lapisan Tengah</b><br>
+        <small style="color:#555">Membentuk ketebalan struktur lantai, meratakan permukaan bergelombang, serta tahan beban berat &amp; forklift.</small>
+        <span class="harga">Hubungi Untuk Harga</span>
+        <a class="btn-beli" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20Epoxy%20Body%20Coat" target="_blank">📲 Pesan Body Coat Via WA</a>
+      </div>
+    </article>
+
+    <article class="produk">
+      <img src="https://placehold.co" alt="Epoxy Top Coat">
+      <div class="isi">
+        <b>3. Epoxy Paint - Top Coat (Base A)</b><br>
+        <small style="color:#555">High Gloss &amp; Durable, 16 Kg Net Weight (Code: CHP-SL-TC-001A). Hasil akhir mengkilap, warna solid, dan tahan kimia.</small>
+        <span class="harga">Hubungi Untuk Harga</span>
+        <a class="btn-beli" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy,%20saya%20ingin%20pesan%20Epoxy%20Top%20Coat" target="_blank">📲 Pesan Top Coat Via WA</a>
+      </div>
     </article>
   </div>
 </section>
@@ -136,69 +194,71 @@
 <section id="form">
   <h2>📋 Formulir Permintaan Survei Lokasi Online</h2>
   <p class="sub">Isi formulir, klik kirim, langsung masuk ke WhatsApp kami.</p>
+  <form onsubmit="kirimSurvei(event)">
+    <label for="nama">Nama Lengkap / Nama Instansi Perusahaan:</label>
+    <input type="text" id="nama" placeholder="Contoh: Budi Santoso / PT Maju Jaya" required>
 
-  <label for="nama">Nama Lengkap / Nama Instansi Perusahaan:</label>
-  <input type="text" id="nama" placeholder="Contoh: PT. Maju Bersama / Ahmad">
+    <label for="wa_klien">Nomor WhatsApp Aktif:</label>
+    <input type="tel" id="wa_klien" placeholder="Contoh: 081234567890" required>
 
-  <label for="telp">Nomor WhatsApp Aktif:</label>
-  <input type="tel" id="telp" placeholder="Contoh: 081234567890">
+    <label for="lokasi">Lokasi Proyek (Alamat / Kota):</label>
+    <input type="text" id="lokasi" placeholder="Contoh: Tangerang Selatan" required>
 
-  <label for="lokasi">Lokasi Proyek (Alamat / Kota):</label>
-  <input type="text" id="lokasi" placeholder="Contoh: Pamulang, Tangerang Selatan">
+    <label for="jenis_pekerjaan">Pilih Ketebalan / Jenis Pekerjaan:</label>
+    <select id="jenis_pekerjaan">
+      <option value="Epoxy 500 Micron">Epoxy 500 Micron</option>
+      <option value="Epoxy 1000 Micron Self Levelling">Epoxy 1000 Micron Self Levelling</option>
+      <option value="Epoxy 1500 Micron Self Levelling">Epoxy 1500 Micron Self Levelling</option>
+      <option value="Epoxy 2000 Micron Heavy Duty">Epoxy 2000 Micron Heavy Duty</option>
+      <option value="Epoxy 3000 Micron Mortar">Epoxy 3000 Micron Mortar</option>
+      <option value="Pembelian Cat Epoxy Saja">Pembelian Cat Epoxy Saja</option>
+    </select>
 
-  <label for="jenis">Pilih Ketebalan / Jenis Pekerjaan:</label>
-  <select id="jenis">
-    <option value="Epoxy 500 Micron">Epoxy 500 Micron</option>
-    <option value="Epoxy 1000 Micron Self Levelling">Epoxy 1000 Micron Self Levelling</option>
-    <option value="Epoxy 1500 Micron Self Levelling">Epoxy 1500 Micron Self Levelling</option>
-    <option value="Epoxy 2000 Micron Heavy Duty">Epoxy 2000 Micron Heavy Duty</option>
-    <option value="Epoxy 3000 Micron Mortar">Epoxy 3000 Micron Mortar</option>
-    <option value="Pembelian Cat Epoxy Saja">Pembelian Cat Epoxy Saja</option>
-  </select>
+    <label for="luas_survei">Perkiraan Luas Area (m²):</label>
+    <input type="number" id="luas_survei" placeholder="Contoh: 350" required>
 
-  <label for="luas">Perkiraan Luas Area (m²):</label>
-  <input type="number" id="luas" placeholder="Contoh: 300" min="1">
+    <label for="catatan">Catatan Tambahan (Opsional):</label>
+    <textarea id="catatan" placeholder="Ceritakan kondisi lantai saat ini..."></textarea>
 
-  <label for="catatan">Catatan Tambahan (Opsional):</label>
-  <textarea id="catatan" placeholder="Jelaskan kondisi lantai saat ini (beton baru, retak, berminyak, atau cat lama)..."></textarea>
-
-  <button type="button" class="btn-kirim" onclick="kirimSurveiWA()">📲 Kirim Permintaan Survei Via WA</button>
+    <button type="submit" class="btn-kirim">📲 Kirim Permintaan Survei Via WA</button>
+  </form>
 </section>
 
 <footer>
   <b>CHOPPER EPOXY PAINT INDONESIA</b><br>
-  Spesialis Epoxy Lantai Profesional &amp; Distributor Cat Epoxy<br>
-  Alamat: Jl. Inpres No. 8, Kel. Benda Baru, Kec. Pamulang, Kota Tangerang Selatan, Banten 15418<br>
-  WhatsApp: +62 812-3632-8858 | Instagram: @chopper_epoxy_paint_indonesia<br><br>
+  Spesialis Epoxy Lantai Profesional &amp; Distributor Cat Epoxy<br><br>
+  📍 <b>Alamat:</b> Jln. Inpres No. 8, Kel. Benda Baru, Kec. Pamulang, Kota Tangerang Selatan, Banten 15418<br>
+  📱 <b>WhatsApp:</b> <a href="https://wa.me/6281236328858" target="_blank">+62 812-3632-8858</a><br>
+  📸 <b>Instagram:</b> <a href="https://instagram.com/chopper_epoxy_paint_indonesia" target="_blank">@chopper_epoxy_paint_indonesia</a><br>
+  ✉️ <b>Email:</b> <a href="mailto:chopperepoxypaintindonesia@gmail.com">chopperepoxypaintindonesia@gmail.com</a><br>
+  🌐 <b>Website:</b> <a href="https://chopperepoxypaintindonesia-cyber.github.io" target="_blank">chopperepoxypaintindonesia-cyber.github.io</a><br><br>
   &copy; 2026 Chopper Epoxy Paint Indonesia. All Rights Reserved.
 </footer>
 
-<a class="wa-float" href="whatsapp://send?phone=6281236328858&text=Halo%20Chopper%20Epoxy%20Paint%20Indonesia,%20saya%20mau%20konsultasi%20epoxy%20lantai">💬 Chat WA</a>
+<a class="wa-float" href="https://wa.me/6281236328858?text=Halo%20Chopper%20Epoxy%20Paint%20Indonesia,%20saya%20ingin%20konsultasi" target="_blank">💬 Chat WA</a>
 
 <script>
-function kirimSurveiWA() {
-  var nama = document.getElementById('nama').value.trim();
-  var telp = document.getElementById('telp').value.trim();
-  var lokasi = document.getElementById('lokasi').value.trim();
-  var jenis = document.getElementById('jenis').value;
-  var luas = document.getElementById('luas').value.trim();
-  var catatan = document.getElementById('catatan').value.trim();
+function kirimSurvei(e) {
+  e.preventDefault();
+  var nama = document.getElementById('nama').value;
+  var waKlien = document.getElementById('wa_klien').value;
+  var lokasi = document.getElementById('lokasi').value;
+  var pekerjaan = document.getElementById('jenis_pekerjaan').value;
+  var luas = document.getElementById('luas_survei').value;
+  var catatan = document.getElementById('catatan').value;
 
-  if (!nama || !telp || !lokasi || !luas) {
-    alert("Mohon lengkapi Nama, Nomor WA, Lokasi Proyek, dan Perkiraan Luas terlebih dahulu.");
-    return;
-  }
+  var pesan = "Halo Chopper Epoxy Paint Indonesia,%0A%0A" +
+              "Saya ingin mengajukan *Permintaan Survei Lokasi* dengan detail:%0A" +
+              "• *Nama / Instansi:* " + nama + "%0A" +
+              "• *No. WA:* " + waKlien + "%0A" +
+              "• *Lokasi Proyek:* " + lokasi + "%0A" +
+              "• *Jenis Pekerjaan:* " + pekerjaan + "%0A" +
+              "• *Perkiraan Luas:* " + luas + " m²%0A" +
+              "• *Catatan:* " + (catatan ? catatan : "-");
 
-  var teksWA = "Halo Chopper Epoxy Paint Indonesia, saya ingin mengajukan Survei Lokasi:%0A" +
-               "- Nama / Instansi: " + encodeURIComponent(nama) + "%0A" +
-               "- No. WA: " + encodeURIComponent(telp) + "%0A" +
-               "- Lokasi Proyek: " + encodeURIComponent(lokasi) + "%0A" +
-               "- Jenis Pekerjaan: " + encodeURIComponent(jenis) + "%0A" +
-               "- Perkiraan Luas: " + encodeURIComponent(luas) + " m2%0A" +
-               "- Catatan: " + encodeURIComponent(catatan || '-');
-
-  window.location.href = "whatsapp://send?phone=6281236328858&text=" + teksWA;
+  window.open("https://wa.me/6281236328858?text=" + pesan, "_blank");
 }
 </script>
+
 </body>
 </html>
